@@ -15,7 +15,7 @@
         $rssfeed .= '<id>' . $aero_id . '</id>';
         $rssfeed .= '<title>' . $aero_name . '</title>';
         $rssfeed .= '<web>' . $aero_web . '</web>';
-        $rssfeed .= '<rss>' . $aero_rss . '</rss>';
+        $rssfeed .= '<feedlink>' . $aero_rss . '</feedlink>';
         $rssfeed .= '</item>';
     }
  
