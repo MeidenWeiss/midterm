@@ -13,7 +13,7 @@
 
 .content_mask{                                         /* Transparent white background */
     width: 100%;
-    background-color: #e2dddd41;
+    background-color: #ffffff69;
     text-align: center;
 }
 
@@ -22,7 +22,7 @@
     height: 100%;
     margin-bottom: 30px;
     display: inline-block;
-    background-color: #e2dddd9f;
+    background-color: #e2dddd00;
 }
 
 h1.title{
@@ -41,11 +41,26 @@ h2.title{
     color: #000000;
 }
 
-p{
+h3.title{
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Zekton';
+    font-size: 30px;
+    color: #000000;
+}
+
+p.content{
     font-family: 'Trebuchet MS';
     font-size: 20px;
-    text-align: center;
+    text-align: left;
 }
+
+div.sub_content{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+}
+
 /* FORM DESIGN */
 input, select {                                                  /* Select drop down design */
     width: 190px;
@@ -83,4 +98,74 @@ input[type=submit]:hover {                                                  /* H
     opacity: 0.9;
     transform: scale(1.0);
     transition: 0.3s;
+}
+
+.icon{
+    width: 30px;
+    height: 30px;
+}
+
+.logo{
+    width: 220px;
+    height: 130px;
+}
+
+.home{
+    width: 230px;
+    height: 130px;
+}
+
+.picture_feed{
+    width: 100px;
+    height: 100px;
+    image-resolution: 50%;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td.text{
+    padding: 20px;
+}
+
+div.news_feed{
+    width: 100%;
+    height: 600px;
+    background-color: #e6e6e68a;
+}
+
+div.news_content{
+    overflow: auto;
+    height: 470px;
+    background-color: #ffffff69;
+}
+
+::-webkit-scrollbar {                                                                               /* Width of Scrollbar*/
+    width: 3px;
+}
+  
+::-webkit-scrollbar-track {                                                                         /* Track bar progress */
+    background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {                                                                         /* Handle */
+    background: #7a7a7a;
+}
+
+::-webkit-scrollbar-thumb:hover {                                                                   /* Handle on hover */
+    background: #ffffff;
+}
+
+a{
+    color: #599cff;
+}
+
+div.line{
+    width: 800px;
+    height: 5px;
+    display: inline-block;
+    border-radius: 90%;
+    background-color: #000000;
 }
