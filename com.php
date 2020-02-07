@@ -5,7 +5,7 @@
     $rssfeed .= '<channel>';
     
     $sql = "SELECT * FROM tbl_aero ORDER BY aero_id ASC;";
-    $connect = mysqli_connect("localhost", "root", "") or die(mysqli_error($connect));
+    $connect = mysqli_connect("us-cdbr-iron-east-04.cleardb.net", "bd6741228486af", "11e0ed1a") or die(mysqli_error($connect));
 	$db = mysqli_select_db($connect, "test");
     $query = mysqli_query($connect,$sql) or die(mysqli_error($connect));
     while($row=mysqli_fetch_assoc($query)) {
