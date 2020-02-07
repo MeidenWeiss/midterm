@@ -45,9 +45,11 @@ $nasa = $manage->nasa_feed();
                                         $date = $rss->getElementsByTagName("pubDate")->item(0)->nodeValue;
                                         $desc = $rss->getElementsByTagName("description")->item(0)->nodeValue;
                                         $link = $rss->getElementsByTagName("link")->item(0)->nodeValue;
+                                        $image = $rss->getElementsByTagName("image")->item(0)->nodeValue;
                                 ?>
                                     <a href="<?php echo $link;?>"><h3 class="title"> <?php echo $title;?></h3></a>
-                                    Date Published: <?php echo $date;?>
+                                    Date Published: <?php echo $date;?> <br> <br>
+                                    <img class="picture_feed" src="<?php echo $image;?>"/>
                                     <p> <?php echo $desc;?> </p>
                                     <div class="line"> </div>
                                 <?php
