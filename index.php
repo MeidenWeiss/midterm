@@ -21,10 +21,22 @@ $load = (isset($_GET['page']) && $_GET['page'] != '') ? $_GET['page'] : '';
                 <?php
                     switch($load){
                         case 'about-us':
-                            require_once('about_us.php'); // NO CONTENT!!
+                            require_once('about_us.php');
+                        break;
+                        case 'spacex':
+                            require_once('spacex_feed.php');
+                        break;
+                        case 'airbus':
+                            require_once('airbus_feed.php');
+                        break;
+                        case 'nasa':
+                            require_once('nasa_feed.php');
+                        break;
+                        case 'ukspace':
+                            require_once('ukspace_feed.php');
                         break;
                         default:
-                            require_once('home.php'); // IN PROGRESS!!
+                            require_once('home.php');
                         break;
                     }
                 ?>

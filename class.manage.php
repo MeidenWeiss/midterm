@@ -39,5 +39,12 @@ class Manage{
         $content = $domOBJ->getElementsByTagName("item");
         return $content;
     }
+
+    public function uk_feed(){
+        $domOBJ = new DOMDocument();
+        $domOBJ->load("http://www.gov.uk/government/organisations/uk-space-agency.atom");
+        $content = $domOBJ->getElementsByTagName("entry");
+        return $content;
+    }
 	
 }
