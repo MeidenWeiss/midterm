@@ -16,12 +16,29 @@ $ukspace = $manage->uk_feed();
         <div class="content_container">
             <div class="content_mask"> <br> <br> 
                 <div class="text_container">
+                    <img src="images/logo.png" />
+                    <p class="content">
+                        Wormhole is a web portal for users seeking aerospace news and updates
+                        from different organizations, public or private.
+                    </p>
+                    <br>
+                    <div class="line"> </div> <br> <br>
+                    <img class="intro_pic" src="images/aerospace.jpg"/>
+                    <div class="intro"> <br>
+                        <h2 class="title"> What's Aerospace? </h2>
+                        <p class="content"> 
+                            Aerospace is the human effort in science, engineering, and business to fly in the 
+                            atmosphere of Earth and surrounding space. Aerospace organizations research, design, 
+                            manufacture, operate, or maintain aircraft or spacecraft.
+                        </p>
+                    </div> <br>
+                    <div class="line"> </div> <br>
                     <h1 class="title"> ✈️ Aerospace News Articles & Updates 🚀</h1>
                     <div class="sub_content">
                         <div class="news_feed">
                             <a href="https://www.spacex.com"><img class="home" src="images/spacex.jpg"/></a> <h3 class="title"><a href="index.php?page=spacex">View All</a></h3>
                             <div class="news_content">
-                                <?php 
+                                <?php
                                     foreach($spacex as $rss){
                                         $title = $rss->getElementsByTagName("title")->item(0)->nodeValue;
                                         $date = $rss->getElementsByTagName("pubDate")->item(0)->nodeValue;
@@ -40,7 +57,7 @@ $ukspace = $manage->uk_feed();
                         <div class="news_feed">
                         <a href="https://www.airbus.com"><img class="home" src="images/airbus.jpg"/></a> <h3 class="title"><a href="index.php?page=airbus">View All</a></h3>
                             <div class="news_content">
-                                <?php 
+                                <?php
                                     foreach($airbus as $rss){
                                         $title = $rss->getElementsByTagName("title")->item(0)->nodeValue;
                                         $date = $rss->getElementsByTagName("pubDate")->item(0)->nodeValue;
@@ -61,7 +78,7 @@ $ukspace = $manage->uk_feed();
                         <div class="news_feed">
                         <a href="https://www.nasa.gov"><img class="home" src="images/nasa.png"/></a> <h3 class="title"><a href="index.php?page=nasa">View All</a></h3>
                             <div class="news_content">
-                                <?php 
+                                <?php
                                     foreach($nasa as $rss){
                                         $title = $rss->getElementsByTagName("title")->item(0)->nodeValue;
                                         $date = $rss->getElementsByTagName("pubDate")->item(0)->nodeValue;
@@ -80,7 +97,7 @@ $ukspace = $manage->uk_feed();
                         <div class="news_feed">
                         <a href="https://www.gov.uk/government/organisations/uk-space-agency#content"><img class="home" src="images/uk.jpg"/></a> <h3 class="title"><a href="index.php?page=ukspace">View All</a></h3>
                             <div class="news_content">
-                                <?php 
+                                <?php
                                     foreach($ukspace as $rss){
                                         $title = $rss->getElementsByTagName("title")->item(0)->nodeValue;
                                         $date = $rss->getElementsByTagName("updated")->item(0)->nodeValue;

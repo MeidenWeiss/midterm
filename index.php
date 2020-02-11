@@ -12,12 +12,15 @@ $load = (isset($_GET['page']) && $_GET['page'] != '') ? $_GET['page'] : '';
             <div id="navigation_body">                                   <!--NAVIGATION BAR-->
                 <div class="navbar">
                     <ul>
-                        <li><a href="index.php">Home</a></li>
-                        <li><a href="index.php?page=about-us">About Us</a></li>
+                        <li><a href="https://www.nasa.gov"><img id="pic" src="images/nasa.png"/></a></li>
+                        <li><a href="https://www.spacex.com"><img id="pic" src="images/spacex.jpg"/></a></li>
+                        <li><a href="index.php"><img id="home_logo" src="images/logo.png"/></a></li>
+                        <li><a href="https://www.airbus.com"><img id="pic" src="images/airbus.jpg"/></a></li>
+                        <li><a href="https://www.gov.uk/government/organisations/uk-space-agency#content"><img id="pic" src="images/uk.jpg"/></a></li>
                     </ul>
                 </div>
             </div>
-            <div class="content">                                      <!--MAIN CONTENT-->
+            <div class="content">                                        <!-- MAIN CONTENT-->
                 <?php
                     switch($load){
                         case 'about-us':
